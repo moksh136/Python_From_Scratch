@@ -76,7 +76,34 @@ os.rmdir("okayy") # it remove created folder or existing folder
 """
 import mymath as mm
 print(mm.add(10, 20))"""
-
+"""
 import mypackages
 print("bhagooo")
-mypackages.calculation()
+mypackages.calculation()"""
+
+"""from collections import ChainMap
+d1 = {'a':1}
+d2 = {'b':2}
+c = ChainMap(d1, d2)
+print(c)"""
+
+"""from collections import Counter
+c = Counter("banana")
+print(c)
+print(c.most_common(1))
+print(list(c.elements()))
+c.update("apple")
+print(c)
+c.subtract("ana")
+print(c)"""
+
+from collections import OrderedDict
+stu = OrderedDict()
+stu["name"] = "ram"
+stu["age"] = 22
+stu["city"]  = "indore"
+print(stu)
+stu.move_to_end("age")
+print(stu)
+stu.move_to_end("city", last = False)
+print(stu)
