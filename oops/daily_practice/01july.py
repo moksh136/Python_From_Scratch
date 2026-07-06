@@ -176,4 +176,34 @@ print(Test.__dict__)"""
         c = self.a +self.b
         print(c)
 t1 = Test(20, 30)"""
-
+"""class Calculator:
+    @staticmethod
+    def add(a, b):
+        return a+b
+c1 = Calculator()
+print(c1.add(10,20))
+print(Calculator.add(10,20))
+print(Calculator.__dict__)
+print(c1.__dict__)
+"""
+"""
+class Student :
+    clg = "IIT"
+    def set(self,name):
+        self.name = name
+    @staticmethod
+    def display (x):
+        print(Student.clg)
+        #print(name)
+        #print(self.name)
+        print(x.name)
+c1 = Student()
+c1.set("deepak")
+c1.display(c1)
+"""
+#statistic
+#regular expression
+import re
+text = "python is easuy"
+res = re.match(r"python", text)
+print(res)
